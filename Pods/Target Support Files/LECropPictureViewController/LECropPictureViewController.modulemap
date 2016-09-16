@@ -1,0 +1,6 @@
+framework module LECropPictureViewController {
+  umbrella header "LECropPictureViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
