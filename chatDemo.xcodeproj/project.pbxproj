@@ -28,9 +28,11 @@
 		755042781D8C26BF007FB439 /* AddContact.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755042741D8C26BF007FB439 /* AddContact.Storyboard */; };
 		755042791D8C26BF007FB439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755042751D8C26BF007FB439 /* Main.storyboard */; };
 		7550427A1D8C26BF007FB439 /* RJTabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755042761D8C26BF007FB439 /* RJTabbarController.storyboard */; };
-		7550427B1D8C26BF007FB439 /* VDSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755042771D8C26BF007FB439 /* VDSelect.storyboard */; };
+		7550427B1D8C26BF007FB439 /* VDSelectImageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755042771D8C26BF007FB439 /* VDSelectImageViewController.storyboard */; };
 		755042801D8C2702007FB439 /* RJBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7550427D1D8C2702007FB439 /* RJBase.m */; };
 		755042811D8C2702007FB439 /* VDUrlObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7550427F1D8C2702007FB439 /* VDUrlObject.m */; };
+		755042841D8C3EFF007FB439 /* UIViewController+VDAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 755042831D8C3EFF007FB439 /* UIViewController+VDAlertController.m */; };
+		7550428A1D8C5C06007FB439 /* UIImageView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 755042891D8C5C06007FB439 /* UIImageView+Utils.m */; };
 		75555DA51D84F4D700445D91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75555DA41D84F4D700445D91 /* main.m */; };
 		75555DAB1D84F4D700445D91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75555DAA1D84F4D700445D91 /* ViewController.m */; };
 		75555DB01D84F4D700445D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75555DAF1D84F4D700445D91 /* Assets.xcassets */; };
@@ -124,11 +126,15 @@
 		755042741D8C26BF007FB439 /* AddContact.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddContact.Storyboard; sourceTree = "<group>"; };
 		755042751D8C26BF007FB439 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		755042761D8C26BF007FB439 /* RJTabbarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RJTabbarController.storyboard; sourceTree = "<group>"; };
-		755042771D8C26BF007FB439 /* VDSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VDSelect.storyboard; sourceTree = "<group>"; };
+		755042771D8C26BF007FB439 /* VDSelectImageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VDSelectImageViewController.storyboard; sourceTree = "<group>"; };
 		7550427C1D8C2702007FB439 /* RJBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBase.h; sourceTree = "<group>"; };
 		7550427D1D8C2702007FB439 /* RJBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBase.m; sourceTree = "<group>"; };
 		7550427E1D8C2702007FB439 /* VDUrlObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDUrlObject.h; sourceTree = "<group>"; };
 		7550427F1D8C2702007FB439 /* VDUrlObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDUrlObject.m; sourceTree = "<group>"; };
+		755042821D8C3EFF007FB439 /* UIViewController+VDAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VDAlertController.h"; sourceTree = "<group>"; };
+		755042831D8C3EFF007FB439 /* UIViewController+VDAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VDAlertController.m"; sourceTree = "<group>"; };
+		755042881D8C5C06007FB439 /* UIImageView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Utils.h"; sourceTree = "<group>"; };
+		755042891D8C5C06007FB439 /* UIImageView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Utils.m"; sourceTree = "<group>"; };
 		75555DA01D84F4D700445D91 /* chatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75555DA41D84F4D700445D91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		75555DA91D84F4D700445D91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -237,6 +243,8 @@
 			isa = PBXGroup;
 			children = (
 				7550422D1D8C1CED007FB439 /* NSString+MD5.h */,
+				755042881D8C5C06007FB439 /* UIImageView+Utils.h */,
+				755042891D8C5C06007FB439 /* UIImageView+Utils.m */,
 				7550422E1D8C1CED007FB439 /* NSString+MD5.m */,
 				7550422F1D8C1CED007FB439 /* NSString+VDisValid.h */,
 				755042301D8C1CED007FB439 /* NSString+VDisValid.m */,
@@ -248,6 +256,8 @@
 				755042281D8C1CD8007FB439 /* AppDelegate+EaseMob.m */,
 				755042291D8C1CD8007FB439 /* AppDelegate+EaseMobDebug.h */,
 				7550422A1D8C1CD8007FB439 /* AppDelegate+EaseMobDebug.m */,
+				755042821D8C3EFF007FB439 /* UIViewController+VDAlertController.h */,
+				755042831D8C3EFF007FB439 /* UIViewController+VDAlertController.m */,
 			);
 			path = catetory;
 			sourceTree = "<group>";
@@ -404,7 +414,7 @@
 				755042741D8C26BF007FB439 /* AddContact.Storyboard */,
 				755042751D8C26BF007FB439 /* Main.storyboard */,
 				755042761D8C26BF007FB439 /* RJTabbarController.storyboard */,
-				755042771D8C26BF007FB439 /* VDSelect.storyboard */,
+				755042771D8C26BF007FB439 /* VDSelectImageViewController.storyboard */,
 			);
 			path = storyboard;
 			sourceTree = "<group>";
@@ -677,7 +687,7 @@
 				755042781D8C26BF007FB439 /* AddContact.Storyboard in Resources */,
 				75555E351D84F76B00445D91 /* add.png in Resources */,
 				75555E3C1D84F76B00445D91 /* sel_msg.png in Resources */,
-				7550427B1D8C26BF007FB439 /* VDSelect.storyboard in Resources */,
+				7550427B1D8C26BF007FB439 /* VDSelectImageViewController.storyboard in Resources */,
 				75555DB31D84F4D700445D91 /* LaunchScreen.storyboard in Resources */,
 				75555E3E1D84F76B00445D91 /* 返回按钮.png in Resources */,
 				75555E361D84F76B00445D91 /* contact.png in Resources */,
@@ -763,6 +773,7 @@
 			files = (
 				755042661D8C24F1007FB439 /* RJTabViewController.m in Sources */,
 				7550422B1D8C1CD8007FB439 /* AppDelegate+EaseMob.m in Sources */,
+				755042841D8C3EFF007FB439 /* UIViewController+VDAlertController.m in Sources */,
 				755042441D8C22AD007FB439 /* EaseSDKHelper.m in Sources */,
 				7550422C1D8C1CD8007FB439 /* AppDelegate+EaseMobDebug.m in Sources */,
 				75555E211D84F74400445D91 /* RJContactCell.m in Sources */,
@@ -775,6 +786,7 @@
 				75555DE71D84F66400445D91 /* RJEngineManager.m in Sources */,
 				75555DAB1D84F4D700445D91 /* ViewController.m in Sources */,
 				755042361D8C1CED007FB439 /* NSString+VDisValid.m in Sources */,
+				7550428A1D8C5C06007FB439 /* UIImageView+Utils.m in Sources */,
 				75555E4A1D84F77A00445D91 /* VDRequestEngine.m in Sources */,
 				75555E221D84F74400445D91 /* RJContactViewController.m in Sources */,
 				75555E1E1D84F74400445D91 /* RJAddContactPersonViewController.m in Sources */,

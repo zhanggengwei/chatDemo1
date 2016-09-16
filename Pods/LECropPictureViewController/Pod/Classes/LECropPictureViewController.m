@@ -84,6 +84,7 @@ static const CGFloat toolbarHeight = 44;
 
 - (void)viewDidLayoutSubviews {
     CGRect frame = self.imageView.frame;
+    
     self.overlay = [[CameraCropOverlay alloc] initWithFrame:frame
                                             backgroundColor:[UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.7]
                                             cropPictureType:self.cropPictureType
@@ -140,6 +141,7 @@ static const CGFloat toolbarHeight = 44;
 -(void)setCropFrame:(CGRect)cropFrame {
     [self.overlay redrawCropViewWithFrame:cropFrame];
     _cropFrame = cropFrame;
+
 }
 
 -(void)setBorderWidth:(CGFloat)borderWidth {

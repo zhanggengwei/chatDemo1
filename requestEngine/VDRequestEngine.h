@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "VDUrlObject.h"
-
+#define PPResponseBlock(blockName) void(^blockName)(id aTaskResponse)
 @interface VDRequestEngine : NSObject
 + (instancetype)shareEngine;
 - (void)requsetLoginResonse:(PPResponseBlock())responseBlock Account:(NSString *)account passWord:(NSString *)pasWord;

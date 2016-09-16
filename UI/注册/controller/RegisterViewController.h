@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "RJBaseViewController.h"
+typedef NS_ENUM(NSInteger,ControlerStyle)
+{
+    VDReginsterController,
+    VDResetPassWordController
+ 
+};
+
+
+
 @interface RegisterViewController : RJBaseViewController
+@property (nonatomic,assign) ControlerStyle style;
 
 @end

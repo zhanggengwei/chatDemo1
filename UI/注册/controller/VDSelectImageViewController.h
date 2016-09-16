@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface VDSelectImageViewController : UIViewController
-
++(instancetype)createVDSelectImageViewController;
 @end

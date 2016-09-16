@@ -78,13 +78,19 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if(indexPath.row!=7)
         return;
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+   
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 //    otherViewController *vc = [[otherViewController alloc] init];
    [tempAppDelegate.LeftSlideVC closeLeftView];//关闭左侧抽屉
-  
+    if(indexPath.row == 7)
+    {
+        [[RJChatTools shareManager]logout];
+        
+    }
 //    
 //    [tempAppDelegate.mainNavigationController pushViewController:vc animated:NO];
 }

@@ -14,17 +14,17 @@
 #import "JSONModel.h"
 #import "EMClient.h"
 #import "VDTDBEnginer.h"
-
-
 #import "RJBase.h"
+#import "VDRequestEngine.h"
 #import "RJEngineManager.h"
 #import "JSONModel.h"
 #import "NSString+VDisValid.h"
 #import "VDHttpResponse.h"
 #import "VDUserInfoEngine.h"
+#import "UIViewController+VDAlertController.h"
 #import <AFNetworking/AFNetworking.h>
 
-
+#import "UIImageView+Utils.h"
 #import "SFHFKeychainUtils-umbrella.h"
 
 #define  kppRequestSucessCode 200
@@ -35,6 +35,17 @@
 #define LOGINFAILED @"登陆失败"
 #define LOGOUTSUCESS @"退出登陆成功"
 #define LOGOUTFAILED @"退出登陆失败"
+
+
+
+#define SuppressPerformSelectorLeakWarning(Stuff) \
+do { \
+_Pragma("clang diagnostic push") \
+_Pragma("clang diagnostic ignored \"-Warc-performSelector-leaks\"") \
+Stuff; \
+_Pragma("clang diagnostic pop") \
+} while (0)
+
 
 //#import "AFHTTPSessionManager.h"
 

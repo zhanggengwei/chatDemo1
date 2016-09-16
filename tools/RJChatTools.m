@@ -109,19 +109,11 @@
     
 }
 -(void)logout{
-   
-
-    
     [self.client asyncLogout:YES success:^{
         NSLog(@"退出登陆成功");
         dispatch_async(dispatch_get_main_queue(), ^{
             [[NSNotificationCenter defaultCenter]postNotificationName:LOGOUTSUCESS object:@(NO)];
-            
         });
-        
-         
-        
-       
         
     } failure:^(EMError *aError) {
         NSLog(@"退出登陆失败");
